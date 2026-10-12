@@ -1,0 +1,34 @@
+a=0
+b=1
+count = 0
+max_count = 20
+while count < max_count:
+    count = count + 1
+    print(a, end=" ")
+    old_a = a
+    a = b
+    b = old_a + b
+print()
+
+a2 = 0
+b2 = 1
+count = 0
+max_count = 10
+while count < max_count:
+    count = count + 1
+    print(a2, b2, end=" ")
+    a2 = a2 + b2
+    b2 = a2 + b2
+print()
+
+a3 = 0
+b3 = 1
+count = 0
+max_count = 20
+while count < max_count:
+    count += 1
+    olda = a3
+    a3 = a3 + b3
+    b3 = olda
+    print(olda,end=" ")
+print()
